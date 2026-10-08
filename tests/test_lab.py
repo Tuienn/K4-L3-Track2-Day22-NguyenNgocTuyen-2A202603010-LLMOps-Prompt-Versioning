@@ -34,6 +34,33 @@ class RAGTests(unittest.TestCase):
         self.assertIn('test question', captured['prompt'])
 
 
+class ABTests(unittest.TestCase):
+    def test_known_routes_repeat_and_cover_both_variants(self):
+        module = importlib.import_module('02_prompt_hub_ab_routing')
+        self.assertEqual(module.get_prompt_version('req-0000'), module.PROMPT_V2_NAME)
+        self.assertEqual(module.get_prompt_version('req-0002'), module.PROMPT_V1_NAME)
+        routes = [module.get_prompt_version(f'req-{i:04d}') for i in range(50)]
+        self.assertEqual(set(routes), {module.PROMPT_V1_NAME, module.PROMPT_V2_NAME})
+        self.assertEqual(routes, [module.get_prompt_version(f'req-{i:04d}') for i in range(50)])
+
+    def test_hub_failure_is_not_silently_replaced_with_local_prompt(self):
+        module = importlib.import_module('02_prompt_hub_ab_routing')
+        from unittest.mock import Mock
+        client = Mock()
+        client.pull_prompt.side_effect = RuntimeError('Hub unavailable')
+        with self.assertRaisesRegex(RuntimeError, 'Hub unavailable'):
+            module.pull_prompts_from_hub(client)
+
+    def test_ab_contexts_and_version_are_retained(self):
+        module = importlib.import_module('02_prompt_hub_ab_routing')
+        retriever = RunnableLambda(lambda question: [Document(page_content='fact')])
+        llm = FakeListChatModel(responses=['answer'])
+        result = module.ask_ab(retriever, llm, module.PROMPT_V2, 'question', 'v2')
+        self.assertEqual(result['contexts'], ['fact'])
+        self.assertEqual(result['version'], 'v2')
+        self.assertEqual(result['answer'], 'answer')
+
+
 class EmbeddingCacheTests(unittest.TestCase):
     def test_duplicates_are_cached_and_tasks_are_separate(self):
         from utils.cached_embeddings import CachedEmbeddings
