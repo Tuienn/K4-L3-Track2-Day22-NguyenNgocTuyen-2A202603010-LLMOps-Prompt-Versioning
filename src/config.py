@@ -58,6 +58,12 @@ def validate() -> bool:
     Trả về True nếu hợp lệ, False nếu thiếu.
     """
     missing = []
+    if PROVIDER not in {"openai", "gemini", "anthropic", "ollama", "openrouter"}:
+        missing.append("PROVIDER hợp lệ")
+    if os.environ["LANGCHAIN_TRACING_V2"].lower() != "true":
+        missing.append("LANGCHAIN_TRACING_V2=true")
+    if PROVIDER in {"anthropic", "openrouter"} and not OPENAI_API_KEY:
+        missing.append("OPENAI_API_KEY (embeddings)")
 
     if not LANGSMITH_API_KEY:
         missing.append("LANGCHAIN_API_KEY (LangSmith)")
@@ -84,4 +90,4 @@ def validate() -> bool:
 
 
 if __name__ == "__main__":
-    validate()
+    raise SystemExit(0 if validate() else 1)

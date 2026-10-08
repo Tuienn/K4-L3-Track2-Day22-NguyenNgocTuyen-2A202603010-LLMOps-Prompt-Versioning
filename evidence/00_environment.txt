@@ -1,0 +1,4 @@
+Checkpoint 0: dùng Python 3.11 trong .venv.
+.env được tải local, PROVIDER=gemini, LANGCHAIN_PROJECT=day22-lab.
+.env được gitignore; không chứa API key trong evidence.
+langchain-community được giới hạn <0.4 theo hướng dẫn lab.
