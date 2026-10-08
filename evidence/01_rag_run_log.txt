@@ -1,0 +1,308 @@
+============================================================
+  Bước 1: LangSmith RAG Pipeline
+============================================================
+✅ Config OK  |  Provider: GEMINI  |  Project: day22-lab
+📚 Đã chia thành 107 chunks
+🔨 Đang tạo FAISS index từ 107 chunks ...
+✅ FAISS vectorstore đã sẵn sàng.
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+[01/50] Q: What are the three main types of machine learning?
+       A: Based on the context, the three main types of machine learning are:
+
+1. Supervised learning
+2. Unsupervised learning
+3. Reinforcement learning
+
+[02/50] Q: What is overfitting in machine learning?
+       A: Based on the provided context, overfitting occurs when a model learns the training data too well, including noise, which leads to poor generalization on new data. An overfitted model performs excellently on training samples but fails on unseen examples because it has memorized specifics rather than learned general patterns.
+
+[03/50] Q: Explain the bias-variance tradeoff.
+       A: Based on the context, the bias-variance tradeoff is a fundamental concept in machine learning where the optimal model balances both bias and variance to minimize total error. 
+
+Specifically:
+* **High bias** means underfitting. A high-bias model makes strong assumptions and underfits the data.
+* **High variance** means overfitting. A high-variance model is too sensitive to training data fluctuations.
+
+The total prediction error can be decomposed into bias squared, variance, and irreducible noise. The goal of the tradeoff is to find the sweet spot where neither bias nor variance dominates.
+
+[04/50] Q: How does regularization prevent overfitting?
+       A: Based on the provided context, regularization prevents overfitting by discouraging overly complex models. Specifically, L1 and L2 regularization achieve this by adding penalty terms to the loss function.
+
+[05/50] Q: What is cross-validation?
+       A: Based on the provided context, cross-validation is a model evaluation technique that provides a more reliable estimate of performance by splitting data into multiple folds.
+
+[06/50] Q: What is backpropagation?
+       A: Based on the provided context, backpropagation is the core algorithm for training neural networks. It computes gradients of the loss with respect to each weight by applying the chain rule of calculus, starting from the output layer and propagating error signals backward through the network to compute partial derivatives layer by layer.
+
+[07/50] Q: What are Convolutional Neural Networks primarily used for?
+       A: Based on the provided context, Convolutional Neural Networks (CNNs) are specialized for processing grid-like data, such as images. Their applications include image classification, object detection, semantic segmentation, and video analysis.
+
+[08/50] Q: How do LSTM networks address the vanishing gradient problem?
+       A: Based on the provided context, LSTM networks address the vanishing gradient problem by using an architecture with gating mechanisms (the input gate, forget gate, and output gate) that allow gradients to flow unchanged over many time steps.
+
+[09/50] Q: What activation functions are commonly used in neural networks?
+       A: Based on the provided context, common activation functions include ReLU (Rectified Linear Unit), sigmoid, and tanh. Newer variants include Leaky ReLU, ELU, and GELU.
+
+[10/50] Q: What is the role of pooling layers in CNNs?
+       A: Based on the context, the role of pooling layers in Convolutional Neural Networks includes:
+
+* Performing spatial downsampling to reduce spatial dimensions and resolution, making the representation smaller and more manageable.
+* Decreasing computational complexity and reducing the number of computations in subsequent layers.
+* Retaining important features.
+* Reducing the number of parameters.
+* Providing a form of translational invariance.
+* Helping control overfitting.
+
+[11/50] Q: What is the transformer architecture?
+       A: Based on the provided context, the transformer architecture is an architecture that revolutionized natural language processing and deep learning, introduced in 'Attention Is All You Need' (2017). It uses self-attention mechanisms and processes entire sequences in parallel. Unlike recurrent networks that process tokens sequentially, transformers can attend to all positions simultaneously, enabling massive parallelism during training. 
+
+The architecture consists of an encoder stack and a decoder stack, each built from layers of multi-head self-attention and feed-forward networks, with positional encodings added to embeddings to convey sequence order information.
+
+[12/50] Q: What are word embeddings?
+       A: Based on the provided context, word embeddings are dense vector representations of words that capture semantic meaning, representing words as dense vectors where semantically similar words are geometrically close.
+
+[13/50] Q: What is transfer learning in NLP?
+       A: Based on the context, transfer learning in NLP means pre-training large models on massive corpora and then fine-tuning them on downstream tasks.
+
+[14/50] Q: How does BERT handle language understanding?
+       A: Based on the provided context, BERT handles language understanding by using bidirectional transformer training with masked language modeling and next sentence prediction. It is trained to predict randomly masked tokens using context from both the left and right, and the next sentence prediction task trains it to understand relationships between sentence pairs. Its bidirectional representations capture richer contextual information, making it powerful for understanding tasks like reading comprehension and semantic similarity.
+
+[15/50] Q: What is self-attention in transformers?
+       A: Based on the provided context, self-attention is the core mechanism that gives transformers their power, allowing models to weigh the importance of different words relative to each other in a sequence. For each token, self-attention computes a weighted sum of all token representations in the sequence, where the weights (attention scores) reflect relevance.
+
+[16/50] Q: What is GPT and how is it trained?
+       A: Based on the context, GPT (Generative Pre-trained Transformer) is a family of autoregressive language models developed by OpenAI. 
+
+It is trained using autoregressive training on massive text datasets to predict the next token (or word) given previous tokens. Specifically, during pre-training, it uses a unidirectional (left-to-right) transformer to predict the next word in billions of text sequences, which forces the model to learn grammar, facts, reasoning, and world knowledge.
+
+[17/50] Q: What is instruction tuning?
+       A: Based on the provided context, instruction tuning is a supervised fine-tuning technique used to make Large Language Models (LLMs) more useful and aligned. It involves fine-tuning pre-trained LLMs on instruction-following datasets—specifically, a diverse collection of (instruction, response) pairs covering tasks like summarization, translation, question answering, and coding—to improve their alignment with human intent and teach them to follow natural language instructions rather than simply predicting the next token.
+
+[18/50] Q: What is RLHF?
+       A: Based on the provided context, Reinforcement Learning from Human Feedback (RLHF) is a technique for aligning large language models with human values, using human preferences to align LLMs to be helpful, harmless, and honest.
+
+[19/50] Q: What is chain-of-thought prompting?
+       A: Based on the provided context, chain-of-thought prompting is a technique that improves LLM reasoning by eliciting intermediate steps. It encourages LLMs to show reasoning step by step, improving performance on complex tasks by including examples that demonstrate a reasoning process (breaking a problem into sub-steps before arriving at the conclusion) instead of asking a model to produce a final answer directly.
+
+[20/50] Q: What is the context length of GPT-4?
+       A: Based on the provided context, GPT-4 supports up to 128K tokens of context.
+
+[21/50] Q: What is Retrieval-Augmented Generation?
+       A: Based on the context, Retrieval-Augmented Generation (RAG) is an approach that augments language models with external knowledge. It combines generative LLMs with retrieval from external knowledge bases to produce grounded, up-to-date answers by retrieving relevant documents at inference time and conditioning the LLM on this context rather than relying solely on knowledge encoded in model parameters during training.
+
+[22/50] Q: What are the main components of a RAG pipeline?
+       A: Based on the provided context, the main components of a RAG pipeline are:
+
+1. A **retriever** that searches a document store (such as a vector database, search engine, or traditional database) and returns the most relevant passages based on a user query.
+2. A **generator (LLM)** that receives both the original query and the retrieved context/passages to produce answers (or a grounded response).
+
+[23/50] Q: What is dense retrieval?
+       A: Based on the provided context, dense retrieval is a neural approach to document retrieval that outperforms traditional keyword matching. It uses neural embeddings to encode queries and documents into dense vectors using a bi-encoder model (such as DPR or E5), and determines relevance by cosine similarity. At query time, the query is encoded and compared to all pre-computed document embeddings using fast nearest-neighbor search. Additionally, dense retrieval captures semantic similarity, allowing it to match queries with relevant documents even when they share no common keywords.
+
+[24/50] Q: Why is chunking strategy important in RAG?
+       A: Based on the provided context, the chunking strategy is important because it significantly impacts the quality of a RAG pipeline by affecting retrieval precision and context window fit. Specifically:
+
+* If chunks are too large, they may contain irrelevant content that distracts the LLM and exceeds context limits.
+* If chunks are too small, they may lack the context needed to answer questions.
+
+[25/50] Q: What advanced RAG techniques exist beyond basic retrieval?
+       A: Based on the context, advanced RAG techniques include:
+
+* Re-ranking
+* Query expansion
+* HyDE (Hypothetical Document Embeddings)
+* Iterative retrieval for multi-hop questions
+
+[26/50] Q: What are vector databases used for?
+       A: Based on the provided context, vector databases are used for:
+
+* Managing and querying high-dimensional vectors.
+* Storing and querying high-dimensional vector embeddings for fast similarity search.
+* Storing embedding vectors alongside their metadata and supporting approximate nearest-neighbor (ANN) search at scale.
+* Enabling fast semantic search over millions or billions of embeddings using specialized indexing structures.
+
+[27/50] Q: What is FAISS?
+       A: Based on the context, FAISS (Facebook AI Similarity Search) is a widely used library for efficient vector search and similarity search, supporting exact and approximate nearest neighbor algorithms.
+
+[28/50] Q: How do text embeddings capture semantic meaning?
+       A: Based on the context, text embeddings capture semantic meaning by converting text into numerical vectors where semantically similar texts produce geometrically close vectors.
+
+[29/50] Q: What is HNSW?
+       A: Based on the context, HNSW (Hierarchical Navigable Small World) is a graph-based algorithm for approximate nearest-neighbor search.
+
+[30/50] Q: What is hybrid search in vector databases?
+       A: Based on the provided context, hybrid search combines the strengths of both neural and keyword-based retrieval. Specifically, it combines dense vector search with sparse keyword search (BM25) using Reciprocal Rank Fusion (RRF). Dense search excels at semantic matching, while sparse search (BM25) excels at precise keyword matching.
+
+[31/50] Q: What is LangChain?
+       A: Based on the provided context, LangChain is an open-source framework that simplifies building applications with large language models (LLMs) by providing abstractions for chains, agents, and data connections, along with modular components for prompt management, output parsing, memory, retrieval, and tool use.
+
+[32/50] Q: What is LangChain Expression Language (LCEL)?
+       A: Based on the context, LangChain Expression Language (LCEL) is a declarative syntax for composing LangChain components, allowing chains to be composed using the pipe operator in a readable, functional style while supporting streaming, async, and batching.
+
+[33/50] Q: What is LangGraph?
+       A: Based on the context, LangGraph is an extension of LangChain for building stateful, multi-actor applications represented as directed graphs that support cycles.
+
+[34/50] Q: What memory types does LangChain support?
+       A: Based on the context, LangChain supports the following memory types:
+
+* ConversationBufferMemory
+* ConversationSummaryMemory
+* ConversationWindowMemory
+* Vector store memory
+
+[35/50] Q: What are LangChain retrievers?
+       A: Based on the provided context, LangChain retrievers are components that fetch relevant documents from a data source given a user query.
+
+[36/50] Q: What is LangSmith?
+       A: Based on the provided context, LangSmith enables comprehensive monitoring of LLM applications in production. It helps monitor these applications by providing latency percentiles, error rates, token costs, and feedback annotations. Additionally, calls are automatically traced and sent to the LangSmith server.
+
+[37/50] Q: What information do LangSmith traces capture?
+       A: Based on the provided context, LangSmith traces capture inputs, outputs, latency, token usage, and errors for every component in a chain. Specifically, each run (span) records:
+* The exact input passed to a component
+* The output produced
+* The time taken
+* Any errors encountered
+
+For LLM calls specifically, LangSmith also records:
+* The number of prompt tokens
+* Completion tokens
+* The estimated cost
+
+[38/50] Q: What is the LangSmith Prompt Hub?
+       A: Based on the provided context, the LangSmith Prompt Hub is a centralized repository for managing prompt templates used for storing, versioning, and sharing prompt templates, while supporting A/B testing and rollback.
+
+[39/50] Q: How does LangSmith help monitor production LLM applications?
+       A: Based on the provided context, LangSmith helps monitor production LLM applications by providing:
+
+* Latency percentiles (surfacing p50, p95, and p99 latency)
+* Error rates (and error rate trends)
+* Token costs (and cost breakdowns by LLM call or chain step)
+* Feedback annotations (where human evaluators can annotate traces with thumbs-up/down feedback or custom scores)
+* Dashboards that aggregate metrics across thousands of traces
+
+[40/50] Q: What are LangSmith datasets used for?
+       A: Based on the provided context, LangSmith datasets are used for systematic evaluation (using example inputs and expected outputs) to compare model versions or prompt changes.
+
+[41/50] Q: What is RAGAS?
+       A: Based on the provided context, RAGAS (Retrieval Augmented Generation Assessment) is an open-source framework specifically designed for evaluating RAG pipelines using LLM-based reference-free metrics.
+
+[42/50] Q: How does RAGAS compute faithfulness?
+       A: Based on the context, RAGAS computes faithfulness by extracting claims (or decomposing the answer into atomic statements) from the answer and checking whether each claim/statement can be inferred from, or is supported by, the retrieved context.
+
+[43/50] Q: What is answer relevancy in RAGAS?
+       A: Based on the provided context, answer relevancy in RAGAS measures how well the generated answer addresses the question asked. Specifically, it measures how well the answer addresses the original question by generating synthetic questions from the answer. It uses an LLM to generate several questions that the answer would naturally address, and then computes the cosine similarity between these synthetic questions and the original question. A high score indicates that the answer is focused and directly responsive to the supported by retrieved context.
+
+[44/50] Q: What is context recall in RAGAS?
+       A: Based on the context, context recall in RAGAS measures how well the retrieved context covers the information needed to answer the question, evaluated against a ground truth reference. It compares each sentence of the reference answer against the retrieved context to check whether the context contains the information needed to derive that sentence. A high recall score means the retriever successfully fetched the information needed.
+
+[45/50] Q: What inputs does RAGAS evaluation require?
+       A: Based on the provided context, RAGAS evaluation requires:
+
+* User queries (found in the `user_input` field, which contains the question posed to the RAG system)
+* Generated answers (found in the `response` field, containing the LLM-generated answer)
+* Retrieved contexts (found in the `retrieved_contexts` field, which must be a list of individual passage strings)
+* Optionally, reference answers (found in the `reference` field)
+
+[46/50] Q: What is Guardrails AI?
+       A: Based on the provided context, Guardrails AI is a framework for adding safety and validation layers to LLM applications. Specifically, it is an open-source framework used to add validation and safety checks to LLM outputs with configurable on-fail actions, providing a declarative way to specify constraints on LLM outputs and automatically enforce them.
+
+[47/50] Q: What is PII and why is it important to detect in LLM responses?
+       A: Based on the context provided, PII stands for Personally Identifiable Information (such as names, email addresses, phone numbers, social security numbers, credit card numbers, passport numbers, and other data that can identify an individual). 
+
+It is important to handle and avoid exposing it because doing so can violate GDPR and HIPAA privacy regulations, and when LLMs process or generate text containing PII, they risk exposing sensitive information to unauthorized parties.
+
+[48/50] Q: What does structured output validation ensure?
+       A: Based on the context, structured output validation ensures that LLM responses conform to expected data formats and schemas such as JSON.
+
+[49/50] Q: What is Constitutional AI?
+       A: Based on the provided context, Constitutional AI is an approach and technique for aligning language models with ethical principles, where a model is given principles to follow and uses self-critique to improve its responses. Developed by Anthropic, it trains a model to evaluate its own responses against a set of constitutional principles (such as "do not generate harmful content") and revise outputs that violate them.
+
+[50/50] Q: What are common AI safety concerns with LLMs?
+       A: Based on the context, the common AI safety concerns with LLMs include:
+
+* Hallucination
+* Toxicity
+* Bias
+* PII leakage
+* Jailbreaking attacks
+
+
+✅ 50 câu hỏi đã chạy; kiểm tra traces trong project 'day22-lab'
+   Mở https://smith.langchain.com để xem traces.

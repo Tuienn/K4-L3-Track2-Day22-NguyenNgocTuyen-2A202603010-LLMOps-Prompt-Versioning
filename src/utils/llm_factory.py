@@ -47,10 +47,15 @@ def get_llm(provider: str = None, temperature: float = 0.0):
 
     elif provider == "gemini":
         from langchain_google_genai import ChatGoogleGenerativeAI
+        kwargs = {}
+        if config.GEMINI_MODEL.removeprefix("models/") not in {"gemini-3.5-flash-lite", "gemini-3.6-flash"}:
+            kwargs["temperature"] = temperature
+        if "gemini-3" in config.GEMINI_MODEL:
+            kwargs["thinking_level"] = "minimal"
         return ChatGoogleGenerativeAI(
             model=config.GEMINI_MODEL,
             google_api_key=config.GOOGLE_API_KEY,
-            temperature=temperature,
+            **kwargs,
         )
 
     elif provider == "anthropic":
@@ -117,9 +122,13 @@ def get_embeddings(provider: str = None):
 
     elif provider == "gemini":
         from langchain_google_genai import GoogleGenerativeAIEmbeddings
-        return GoogleGenerativeAIEmbeddings(
-            model=config.GEMINI_EMBEDDING_MODEL,
-            google_api_key=config.GOOGLE_API_KEY,
+        from utils.cached_embeddings import CachedEmbeddings
+        return CachedEmbeddings(
+            GoogleGenerativeAIEmbeddings(
+                model=config.GEMINI_EMBEDDING_MODEL,
+                google_api_key=config.GOOGLE_API_KEY,
+            ),
+            namespace=config.GEMINI_EMBEDDING_MODEL,
         )
 
     elif provider == "anthropic":
