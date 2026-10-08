@@ -55,6 +55,7 @@ def get_llm(provider: str = None, temperature: float = 0.0):
         return ChatGoogleGenerativeAI(
             model=config.GEMINI_MODEL,
             google_api_key=config.GOOGLE_API_KEY,
+            timeout=120,
             **kwargs,
         )
 

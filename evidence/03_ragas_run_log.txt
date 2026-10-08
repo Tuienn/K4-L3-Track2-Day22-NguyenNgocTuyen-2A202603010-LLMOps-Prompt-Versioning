@@ -1,0 +1,284 @@
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:17: DeprecationWarning: Importing answer_relevancy from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import answer_relevancy
+  from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:17: DeprecationWarning: Importing context_precision from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import context_precision
+  from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:17: DeprecationWarning: Importing context_recall from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import context_recall
+  from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:17: DeprecationWarning: Importing faithfulness from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import faithfulness
+  from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+✅ Config OK  |  Provider: GEMINI  |  Project: day22-lab
+Pulled immutable Hub prompt v1: 7517975dabd11816d6b4ad3a06dc83d14a6dd055b3584c32169c46f43453be4b
+Pulled immutable Hub prompt v2: 5b89e5507bb53b98ed2b9ba37e7e89a6f2ad34891a9981e8fadeb452766e7d19
+🔨 Đang tạo FAISS index từ 107 chunks ...
+✅ FAISS vectorstore đã sẵn sàng.
+v1: 19 matching answers reused; generating the remainder
+v1: completed 20/50 answers
+v1: completed 21/50 answers
+v1: completed 22/50 answers
+v1: completed 23/50 answers
+v1: completed 24/50 answers
+v1: completed 25/50 answers
+v1: completed 26/50 answers
+v1: completed 27/50 answers
+v1: completed 28/50 answers
+v1: completed 29/50 answers
+v1: completed 30/50 answers
+v1: completed 31/50 answers
+v1: completed 32/50 answers
+v1: completed 33/50 answers
+v1: completed 34/50 answers
+v1: completed 35/50 answers
+v1: completed 36/50 answers
+v1: completed 37/50 answers
+v1: completed 38/50 answers
+v1: completed 39/50 answers
+v1: completed 40/50 answers
+v1: completed 41/50 answers
+v1: completed 42/50 answers
+v1: completed 43/50 answers
+v1: completed 44/50 answers
+v1: completed 45/50 answers
+v1: completed 46/50 answers
+v1: completed 47/50 answers
+v1: completed 48/50 answers
+v1: completed 49/50 answers
+v1: completed 50/50 answers
+v2: 31 matching answers reused; generating the remainder
+v2: completed 32/50 answers
+v2: completed 33/50 answers
+v2: completed 34/50 answers
+v2: completed 35/50 answers
+v2: completed 36/50 answers
+v2: completed 37/50 answers
+v2: completed 38/50 answers
+v2: completed 39/50 answers
+v2: completed 40/50 answers
+v2: completed 41/50 answers
+v2: completed 42/50 answers
+v2: completed 43/50 answers
+v2: completed 44/50 answers
+v2: completed 45/50 answers
+v2: completed 46/50 answers
+v2: completed 47/50 answers
+v2: completed 48/50 answers
+v2: completed 49/50 answers
+v2: completed 50/50 answers
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:97: DeprecationWarning: LangchainLLMWrapper is deprecated and will be removed in a future version. Use llm_factory instead: from openai import OpenAI; from ragas.llms import llm_factory; llm = llm_factory('gpt-4o-mini', client=OpenAI(api_key='...'))
+  llm_eval = LangchainLLMWrapper(get_llm(temperature=0), run_config=run_config, cache=cache)
+RAGAS v1: evaluating samples 1-5/50
+Evaluating:   0%|          | 0/20 [00:00<?, ?it/s]/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:   5%|▌         | 1/20 [00:14<04:36, 14.55s/it]/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+Evaluating:  10%|█         | 2/20 [00:16<02:07,  7.10s/it]/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py:3908: UserWarning: Model 'gemini-3.5-flash-lite' uses fixed sampling defaults; the sampling parameter(s) temperature will be ignored.
+  request = self._build_request_config(
+Evaluating:  10%|█         | 2/20 [00:23<03:30, 11.68s/it]
+Traceback (most recent call last):
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 4220, in _agenerate
+    await self.async_client.models.generate_content(
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/google/genai/models.py", line 8425, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/google/genai/models.py", line 6879, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/google/genai/_api_client.py", line 1803, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/google/genai/_api_client.py", line 1735, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/__init__.py", line 393, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/google/genai/_api_client.py", line 1664, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/google/genai/errors.py", line 265, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/google/genai/errors.py", line 287, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Multiple candidates is not enabled for this model', 'status': 'INVALID_ARGUMENT'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py", line 147, in <module>
+    'prompt_commits': saved['prompt_commits']}
+
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py", line 130, in main
+    raise SystemExit(1)
+            ^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py", line 102, in run_ragas_eval
+    ).encode()).hexdigest()
+                 ^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/_analytics.py", line 278, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/evaluation.py", line 484, in evaluate
+    return run(_async_wrapper())
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/async_utils.py", line 156, in run
+    return asyncio.run(coro)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/tuienn/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/evaluation.py", line 457, in _async_wrapper
+    return await aevaluate(
+           ^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/evaluation.py", line 311, in aevaluate
+    raise e
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/evaluation.py", line 287, in aevaluate
+    results = await executor.aresults()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/executor.py", line 200, in aresults
+    results = await self._process_jobs()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/executor.py", line 131, in _process_jobs
+    await self._process_coroutines(
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/executor.py", line 189, in _process_coroutines
+    raise result
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/async_utils.py", line 114, in process_futures
+    result = await future
+             ^^^^^^^^^^^^
+  File "/home/tuienn/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/tasks.py", line 615, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/async_utils.py", line 77, in sema_coro
+    return await coro
+           ^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/executor.py", line 73, in wrapped_callable_async
+    raise e
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/executor.py", line 69, in wrapped_callable_async
+    result = await callable(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/metrics/base.py", line 488, in single_turn_ascore
+    raise e
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/metrics/base.py", line 481, in single_turn_ascore
+    score = await asyncio.wait_for(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/metrics/_answer_relevance.py", line 135, in _single_turn_ascore
+    return await self._ascore(row, callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/metrics/_answer_relevance.py", line 151, in _ascore
+    return await super()._ascore(row, callbacks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/metrics/_answer_relevance.py", line 142, in _ascore
+    responses = await self.question_generation.generate_multiple(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/prompt/pydantic_prompt.py", line 277, in generate_multiple
+    resp = await ragas_llm.generate(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/llms/base.py", line 116, in generate
+    result = await agenerate_text_with_retry(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 193, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/cache.py", line 229, in async_wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/ragas/llms/base.py", line 298, in agenerate_text
+    result = await self.langchain_llm.agenerate_prompt(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1888, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1846, in agenerate
+    raise exceptions[0]
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 2179, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 4225, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/.venv/lib/python3.11/site-packages/langchain_google_genai/chat_models.py", line 326, in _handle_client_error
+    raise error_type(msg) from e
+langchain_google_genai.chat_models.GoogleInvalidRequestError: Error calling model 'gemini-3.5-flash-lite' (INVALID_ARGUMENT): 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Multiple candidates is not enabled for this model', 'status': 'INVALID_ARGUMENT'}}
+sys:1: RuntimeWarning: coroutine 'Executor.wrap_callable_with_index.<locals>.wrapped_callable_async' was never awaited
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:17: DeprecationWarning: Importing answer_relevancy from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import answer_relevancy
+  from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:17: DeprecationWarning: Importing context_precision from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import context_precision
+  from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:17: DeprecationWarning: Importing context_recall from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import context_recall
+  from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:17: DeprecationWarning: Importing faithfulness from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import faithfulness
+  from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+✅ Config OK  |  Provider: GEMINI  |  Project: day22-lab
+Pulled immutable Hub prompt v1: 7517975dabd11816d6b4ad3a06dc83d14a6dd055b3584c32169c46f43453be4b
+Pulled immutable Hub prompt v2: 5b89e5507bb53b98ed2b9ba37e7e89a6f2ad34891a9981e8fadeb452766e7d19
+🔨 Đang tạo FAISS index từ 107 chunks ...
+✅ FAISS vectorstore đã sẵn sàng.
+v1: 50 matching answers reused; generating the remainder
+v2: 50 matching answers reused; generating the remainder
+/home/tuienn/User/VinAI/Labs/2026-10-08/K4-L3-Track2-Day22-NguyenNgocTuyen-2A202603010-LLMOps-Prompt-Versioning/src/03_ragas_evaluation.py:108: DeprecationWarning: LangchainLLMWrapper is deprecated and will be removed in a future version. Use llm_factory instead: from openai import OpenAI; from ragas.llms import llm_factory; llm = llm_factory('gpt-4o-mini', client=OpenAI(api_key='...'))
+  llm_eval = LangchainLLMWrapper(get_llm(temperature=0), run_config=run_config, cache=cache,
+RAGAS v1: evaluating samples 1-5/50
+Evaluating:   0%|          | 0/20 [00:00<?, ?it/s]LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+Evaluating:  15%|█▌        | 3/20 [00:20<01:58,  6.99s/it]Evaluating:  20%|██        | 4/20 [00:31<02:10,  8.13s/it]Evaluating:  25%|██▌       | 5/20 [00:31<01:25,  5.67s/it]Evaluating:  30%|███       | 6/20 [00:32<00:57,  4.11s/it]Evaluating:  35%|███▌      | 7/20 [00:38<01:02,  4.83s/it]Evaluating:  40%|████      | 8/20 [01:05<02:17, 11.45s/it]Evaluating:  45%|████▌     | 9/20 [01:10<01:44,  9.46s/it]Evaluating:  50%|█████     | 10/20 [01:30<02:06, 12.69s/it]Evaluating:  55%|█████▌    | 11/20 [01:39<01:44, 11.57s/it]Evaluating:  60%|██████    | 12/20 [01:44<01:15,  9.45s/it]Evaluating:  65%|██████▌   | 13/20 [01:49<00:58,  8.39s/it]Evaluating:  70%|███████   | 14/20 [02:17<01:25, 14.22s/it]Evaluating:  75%|███████▌  | 15/20 [02:34<01:14, 14.89s/it]Evaluating:  80%|████████  | 16/20 [02:36<00:44, 11.02s/it]Evaluating:  85%|████████▌ | 17/20 [02:44<00:30, 10.16s/it]Evaluating:  90%|█████████ | 18/20 [02:47<00:16,  8.19s/it]Evaluating:  95%|█████████▌| 19/20 [03:23<00:16, 16.32s/it]Evaluating: 100%|██████████| 20/20 [04:22<00:00, 29.09s/it]Evaluating: 100%|██████████| 20/20 [04:22<00:00, 13.10s/it]
+RAGAS v1: saved 5/50 evaluated samples
+RAGAS v1: evaluating samples 6-10/50
+Evaluating:   0%|          | 0/20 [00:00<?, ?it/s]Evaluating:   5%|▌         | 1/20 [00:13<04:17, 13.54s/it]Evaluating:  10%|█         | 2/20 [00:24<03:41, 12.28s/it]Evaluating:  15%|█▌        | 3/20 [00:33<02:59, 10.53s/it]Evaluating:  20%|██        | 4/20 [00:35<01:55,  7.22s/it]Evaluating:  25%|██▌       | 5/20 [00:39<01:31,  6.09s/it]Evaluating:  30%|███       | 6/20 [00:46<01:30,  6.44s/it]Evaluating:  35%|███▌      | 7/20 [00:47<01:00,  4.65s/it]Evaluating:  40%|████      | 8/20 [01:10<02:03, 10.30s/it]Evaluating:  45%|████▌     | 9/20 [01:13<01:29,  8.13s/it]Evaluating:  50%|█████     | 10/20 [01:17<01:07,  6.78s/it]Evaluating:  55%|█████▌    | 11/20 [01:41<01:48, 12.09s/it]Evaluating:  65%|██████▌   | 13/20 [01:44<00:50,  7.19s/it]Evaluating:  70%|███████   | 14/20 [01:52<00:44,  7.43s/it]Evaluating:  75%|███████▌  | 15/20 [01:59<00:36,  7.23s/it]

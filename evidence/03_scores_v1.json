@@ -1,0 +1,35 @@
+{
+  "fingerprint": "1b7b08142f497cc5fde4c046e20cd21f7e746cdcabdbd40b53f4940b3b7e0fc9",
+  "samples": [
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8215696988479114,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7830973767770967,
+      "context_recall": 1.0,
+      "context_precision": 0.99999999995
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8041587243521291,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.835706815276589,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8005376425006792,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    }
+  ]
+}

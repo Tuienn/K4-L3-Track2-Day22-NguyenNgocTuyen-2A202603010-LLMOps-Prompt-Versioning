@@ -61,6 +61,53 @@ class ABTests(unittest.TestCase):
         self.assertEqual(result['answer'], 'answer')
 
 
+class EvaluationTests(unittest.TestCase):
+    def test_dataset_preserves_reference_and_separate_passages(self):
+        module = importlib.import_module('03_ragas_evaluation')
+        results = [{'question': 'question', 'reference': 'reference',
+                    'answer': 'answer', 'contexts': ['passage one', 'passage two']}]
+        sample = module.build_ragas_dataset(results).samples[0]
+        self.assertEqual(sample.user_input, 'question')
+        self.assertEqual(sample.response, 'answer')
+        self.assertEqual(sample.reference, 'reference')
+        self.assertEqual(sample.retrieved_contexts, ['passage one', 'passage two'])
+
+    def test_single_candidate_model_still_produces_three_ragas_generations(self):
+        import asyncio
+        from ragas.llms import LangchainLLMWrapper
+        from langchain_core.prompt_values import StringPromptValue
+        class SingleCandidateModel(FakeListChatModel):
+            n: int = 1
+        model = SingleCandidateModel(responses=['one', 'two', 'three'])
+        wrapper = LangchainLLMWrapper(model, bypass_n=True, bypass_temperature=True)
+        loop = asyncio.new_event_loop()
+        try:
+            result = loop.run_until_complete(wrapper.agenerate_text(StringPromptValue(text='question'), n=3))
+        finally:
+            loop.close()
+        self.assertEqual(model.n, 1)
+        self.assertEqual(len(result.generations[0]), 3)
+
+    def test_nonfinite_metric_is_rejected_instead_of_omitted(self):
+        import tempfile
+        from unittest.mock import Mock
+        module = importlib.import_module('03_ragas_evaluation')
+        results = [{'question': 'question', 'reference': 'reference',
+                    'answer': 'answer', 'contexts': ['passage']}]
+        scores = {key: [1.0] for key in module.METRICS}
+        scores['faithfulness'] = [float('nan')]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'evidence').mkdir()
+            with patch.object(module, 'ROOT', root), \
+                 patch.object(module, 'get_llm', return_value=FakeListChatModel(responses=['answer'])), \
+                 patch.object(module, 'get_embeddings', return_value=Mock()), \
+                 patch.object(module, 'evaluate', return_value=scores):
+                with self.assertRaisesRegex(RuntimeError, 'Non-finite'):
+                    module.run_ragas_eval(results, 'v1')
+            self.assertFalse((root / 'evidence' / '03_scores_v1.json').exists())
+
+
 class EmbeddingCacheTests(unittest.TestCase):
     def test_duplicates_are_cached_and_tasks_are_separate(self):
         from utils.cached_embeddings import CachedEmbeddings
